@@ -31,3 +31,7 @@ python -m unittest *Test.py
 7. Add tests in empty file `CatsStorageServiceTest.py` with Copilot's help. /tests command and run tests.
 
 8. Slightly review Code for `CatsPartnerFinder.py` and run tests. (this code has a code smell)
+
+9. Fix code smell by reacotring implementation of `CatsPartnerFinder.py` to extract PersonPreferences class.
+
+10. Update tests after refactoring with Copilot's help (maybe Copilot Edits). Run tests.
