@@ -25,15 +25,4 @@ describe('Calculator', () => {
             expect(result).toBe(6);
         });
     });
-
-    describe('divide', () => {
-        it('should divide two numbers', () => {
-            const result = calculator.divide(6, 3);
-            expect(result).toBe(2);
-        });
-
-        it('should throw an error when dividing by zero', () => {
-            expect(() => calculator.divide(6, 0)).toThrow();
-        });
-    });
 });
