@@ -1,11 +1,15 @@
 # Copilot for Tests
 
-## Javascript
+## Run tests
 
-### Run tests
+### Javascript
 
 ```bash
 npm test
 ```
 
-## Python
+### Python
+
+```bash
+python -m unittest *Test.py
+```
