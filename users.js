@@ -25,6 +25,17 @@ app.get("/users", (req, res) => {
   res.json(fakeUsers);
 });
 
+// generate a route to search a user by email
+app.get("/users/search", (req, res) => {
+  const { email } = req.query;
+  const user = fakeUsers.find((user) => user.email === email);
+  if (user) {
+    res.json(user);
+  } else {
+    res.status(404).json({ message: "User not found" });
+  }
+});
+
 // Start the server
 const PORT = 3000;
 app.listen(PORT, () => {
