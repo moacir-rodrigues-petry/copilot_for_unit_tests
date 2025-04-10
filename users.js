@@ -1,3 +1,12 @@
+/**
+ * This file is for development purposes only.
+ * It provides a simple Express server with a /users endpoint
+ * that returns a list of fake users.
+ *
+ * Note: Do not use this in production as it contains hardcoded data
+ * and lacks proper security measures.
+ */
+
 const express = require("express");
 const app = express();
 
